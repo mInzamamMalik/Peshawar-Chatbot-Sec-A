@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navBar {
+            /* border: 2px solid rgb(244, 203, 0); */
+            display: flex;
+            justify-content: space-between;
+            /* flex-wrap: wrap; */
+            margin: 0 2rem 0 2rem;
+        }
+
+        .navBar .leftSide {
+            /* border: 2px solid gray; */
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .navBar .middle {
+            flex-basis: 600px;
+        }
+        .navBar .middle input{
+            width: 100%;
+        }
+
+        .navBar .rightSide {
+            display: flex;
+            align-items: center;
+            
+        }
+
+        .navBar .rightSide a,
+        .navBar .rightSide button {
+            margin-left: 1rem;
+        }
+
+        .navBar .leftSide ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .navBar .leftSide ul li {
+            margin-right: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navBar">
+        <div class="leftSide">
+            <img width="150px" src="./img/logo.png" alt="">
+            <ul>
+                <li> Home </li>
+                <li> About </li>
+                <li> Contact </li>
+            </ul>
+        </div>
+
+        <div class="middle">
+            <input type="text">
+        </div>
+
+        <div class="rightSide">
+            <a href="#"> SignIn</a>
+            <button>Talk to sales</button>
+            <button>Try for Free</button>
+        </div>
+
+    </nav>
+
+
+
+</body>
+
+</html>
