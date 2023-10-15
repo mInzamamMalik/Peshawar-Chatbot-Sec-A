@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Input Output - es6 calculator</h1>
+
+    <form onsubmit="doSum(event)">
+        first number: <input id="firstNum" type="number" required step="0.1">
+        <br>
+        second number: <input id="secondNum" type="number" required step="0.1">
+        <br>
+        <button>Sum</button>
+    </form>
+
+    <h1 id="resultWindow"></h1>
+
+    <script>
+        console.log("hello es6");
+
+        function doSum(event) {
+
+            event.preventDefault();
+            let firstNumber = document.querySelector("#firstNum").value;
+            let secondNumber = document.querySelector("#secondNum").value;
+
+            console.log(firstNumber); // 5
+            console.log(secondNumber); // 6
+
+            let result = Number(firstNumber) + Number(secondNumber);
+
+            // es6 string templates
+            let message = `the sum of ${firstNumber} and ${secondNumber} is ${result}`
+
+            document.querySelector("#resultWindow").innerHTML = message
+
+        }
+    </script>
+</body>
+
+</html>
