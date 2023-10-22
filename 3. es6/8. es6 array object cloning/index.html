@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Array and Object cloning</h1>
+
+    <script>
+
+        // let student1 = {
+        //     name: "Ali",
+        //     roll: "23A",
+        //     age: 24
+        // }
+
+        // // let studentCopy = student1; // copy by reference
+
+        // // let studentCopy = { // cloning
+        // //     name: student1["name"],
+        // //     roll: student1["roll"],
+        // //     age: student1["age"]
+        // // }
+
+        // let studentCopy = { ...student1 }; // object cloning
+
+        // console.log(student1);
+        // console.log(studentCopy);
+
+        // studentCopy["name"] = "Malik"
+
+        // console.log(student1);
+        // console.log(studentCopy);
+
+
+
+        // let num1 = 24;
+        // let numCopy = num1; // copy by value
+
+        // // primitive: number, string, boolean.
+        // // non-primitive: Array, Object.
+
+        // console.log(num1);
+        // console.log(numCopy);
+
+        // numCopy = 10;
+        // num1 = 99;
+
+        // console.log(num1);
+        // console.log(numCopy);
+
+
+
+
+        let names = ["Ali", "Rehan", "Abdul"];
+        // let namesCopy = names; // copy by referance
+
+        let namesCopy = [...names]; // array clone
+
+        console.log(names);
+        console.log(namesCopy);
+
+        namesCopy.pop();
+
+        console.log(names);
+        console.log(namesCopy);
+
+
+
+
+    </script>
+</body>
+
+</html>
