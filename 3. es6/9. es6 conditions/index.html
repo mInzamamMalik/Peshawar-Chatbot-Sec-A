@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>es6 Conditions checking with if statement</h1>
+
+    <form onsubmit="weatherCheck(event)">
+        Enter Your Room Temperature:
+        <input id="tempInput" type="number" required step="0.01">
+        <br>
+        <button>Check</button>
+    </form>
+
+    <h1 id="resultWindow"></h1>
+
+    <script>
+        function weatherCheck(event) {
+
+            event.preventDefault();
+            let tempInput = document.querySelector("#tempInput").value;
+            tempInput = Number(tempInput);
+
+            console.log(tempInput);
+
+            let message = "";
+
+            if (tempInput > 25) {
+                message = "weather is hot"
+            } 
+
+            if(tempInput < 25){
+                message = "weather is cold"
+            }
+
+            document.querySelector("#resultWindow").innerHTML = message
+
+        }
+
+
+    </script>
+</body>
+
+</html>
