@@ -30,13 +30,21 @@
 
             let message = "";
 
-            if (tempInput > 25) {
-                message = "weather is hot"
-            } 
 
-            if(tempInput < 25){
+            if (tempInput <= 20) {
                 message = "weather is cold"
+
+            } else if (tempInput <= 30) {
+                message = "weather is normal"
+
+            } else if (tempInput <= 40) {
+                message = "weather is Hot"
+
+            } else {
+                message = "weather is Deadly"
             }
+
+
 
             document.querySelector("#resultWindow").innerHTML = message
 
