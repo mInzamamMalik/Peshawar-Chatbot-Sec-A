@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>es6 condition checking: ternary operator</h1>
+
+    <script>
+
+        let tempInput = 20; // user input
+
+        let hr = new Date().getHours(); // 0-23;
+
+        let result =
+            `good 
+            
+            ${(hr < 4) ? "night" :
+                (hr < 12) ? "morning" :
+                    (hr < 16) ? "afternoon" :
+                        (hr < 20) ? "evening" : "night"}
+            
+            ,weather is 
+
+            ${(tempInput < 35) ? "cold" : "hot"}`
+
+
+        console.log("result: ", result);
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
