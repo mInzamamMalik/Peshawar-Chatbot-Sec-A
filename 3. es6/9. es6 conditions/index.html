@@ -30,17 +30,27 @@
 
 
 
-            if (tempInput < 20) {
+            if (tempInput < 21) { // 23
+
                 console.log("weather is cold");
-                document.querySelector("#resultWindow").innerHTML = "weather is cold"
-            }
-            if (tempInput > 20) {
+                document.querySelector("#resultWindow").innerHTML
+                    = "weather is cold"
+
+            } else if (tempInput < 27) {
+                console.log("weather is normal");
+                document.querySelector("#resultWindow").innerHTML
+                    = "weather is normal"
+
+            } else if (tempInput < 40) {
                 console.log("weather is hot");
-                document.querySelector("#resultWindow").innerHTML = "weather is hot"
-            }
-            if (tempInput === 20) {
-                console.log("weather is hot");
-                document.querySelector("#resultWindow").innerHTML = "weather is hot"
+                document.querySelector("#resultWindow").innerHTML
+                    = "weather is hot"
+
+            } else {
+                console.log("weather is deadly");
+                document.querySelector("#resultWindow").innerHTML
+                    = "weather is deadly"
+
             }
 
 
